@@ -1,0 +1,36 @@
+﻿Построение начато 21.12.2015 23:49:41.
+     1>Проект "D:\delme\Minecraft2\Minecraft\Minecraft\Minecraft.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Создание "Release\Minecraft.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"D:\SFML-2.0\include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D SFML_DYNAMIC /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Release\\" /Fd"Release\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>d:\delme\minecraft2\minecraft\minecraft\helpFile.hpp(7): warning C4305: инициализация: усечение из "double" к "const float"
+     1>main.cpp(31): warning C4244: -=: преобразование "double" в "float", возможна потеря данных
+     1>main.cpp(46): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+     1>main.cpp(47): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+     1>main.cpp(48): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+     1>main.cpp(169): warning C4244: инициализация: преобразование "sf::Int32" в "float", возможна потеря данных
+     1>main.cpp(225): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+     1>main.cpp(226): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+     1>main.cpp(227): warning C4244: =: преобразование "float" в "int", возможна потеря данных
+     1>main.cpp(248): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+     1>main.cpp(249): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+     1>main.cpp(250): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+     1>main.cpp(267): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+     1>main.cpp(268): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\delme\Minecraft2\Minecraft\Release\Minecraft.exe" /NOLOGO /LIBPATH:"D:\SFML-2.0\lib" "sfml-graphics.lib" "sfml-window.lib" "sfml-system.lib" opengl32.lib glu32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Release\Minecraft.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\delme\Minecraft2\Minecraft\Release\Minecraft.pdb" /OPT:REF /OPT:ICF /LTCG /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\delme\Minecraft2\Minecraft\Release\Minecraft.lib" /MACHINE:X86 Release\main.obj
+         Создание кода
+         Создание кода завершено
+         Minecraft.vcxproj -> D:\delme\Minecraft2\Minecraft\Release\Minecraft.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\delme\Minecraft2\Minecraft\Release\Minecraft.exe;#1" /manifest Release\Minecraft.exe.intermediate.manifest
+       FinalizeBuildStatus:
+         Файл "Release\Minecraft.unsuccessfulbuild" удаляется.
+         Обращение к "Release\Minecraft.lastbuildstate".
+     1>Построение проекта "D:\delme\Minecraft2\Minecraft\Minecraft\Minecraft.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:02.00

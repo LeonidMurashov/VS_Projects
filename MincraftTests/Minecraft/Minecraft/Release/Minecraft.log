@@ -1,0 +1,25 @@
+﻿Build started 20.12.2015 12:20:57.
+     1>Project "D:\delme\Minecraft\Minecraft\Minecraft.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"D:\VS_projects\SFML-2.3.2\include" /Zi /nologo /W3 /WX- /O2 /Oi /Oy- /GL /D SFML_DYNAMIC /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Release\\" /Fd"Release\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>d:\delme\minecraft\minecraft\helpFile.hpp(7): warning C4305: 'initializing': truncation from 'double' to 'float'
+     1>d:\delme\minecraft\minecraft\helpFile.hpp(22): error C3861: 'gluBuild2DMipmaps': identifier not found
+     1>main.cpp(29): warning C4244: '-=': conversion from 'double' to 'float', possible loss of data
+     1>main.cpp(44): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+     1>main.cpp(45): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+     1>main.cpp(46): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+     1>main.cpp(97): error C3861: 'gluPerspective': identifier not found
+     1>main.cpp(147): warning C4244: 'initializing': conversion from 'sf::Int32' to 'float', possible loss of data
+     1>main.cpp(203): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+     1>main.cpp(204): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+     1>main.cpp(205): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+     1>main.cpp(220): error C3861: 'gluLookAt': identifier not found
+     1>main.cpp(226): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+     1>main.cpp(227): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+     1>main.cpp(228): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+     1>Done Building Project "D:\delme\Minecraft\Minecraft\Minecraft.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:01.77

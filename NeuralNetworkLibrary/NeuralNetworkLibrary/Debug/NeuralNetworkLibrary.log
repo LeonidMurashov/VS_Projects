@@ -1,0 +1,3 @@
+﻿  NeuralNetwork.cpp
+d:\vs_projects\neuralnetworklibrary\neuralnetworklibrary\neuralnetwork.cpp(157): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  NeuralNetworkLibrary.vcxproj -> D:\VS_projects\NeuralNetworkLibrary\NeuralNetworkLibrary\Debug\NeuralNetworkLibrary.dll

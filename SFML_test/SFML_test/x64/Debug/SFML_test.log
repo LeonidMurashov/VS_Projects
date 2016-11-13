@@ -1,0 +1,4 @@
+﻿  main.cpp
+d:\vs_projects\sfml_test\sfml_test\main.cpp(27): warning C4244: =: преобразование "sf::Int32" в "float", возможна потеря данных
+  SFML_test.vcxproj -> D:\VS_projects\SFML_test\x64\Debug\SFML_test.exe
+  SFML_test.vcxproj -> D:\VS_projects\SFML_test\x64\Debug\SFML_test.pdb (Partial PDB)

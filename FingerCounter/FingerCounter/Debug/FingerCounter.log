@@ -1,0 +1,20 @@
+﻿Build started 18.02.2016 14:44:03.
+     1>Project "D:\VS_projects\FingerCounter\FingerCounter\FingerCounter.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\CL.exe /c /I"C:\OpenCV-3.0.0\opencv\build\include" /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"Debug\\" /Fd"Debug\vc140.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>d:\vs_projects\fingercounter\fingercounter\main.cpp(9): error C2065: 'VideoCapture': undeclared identifier
+     1>d:\vs_projects\fingercounter\fingercounter\main.cpp(9): error C2146: syntax error: missing ';' before identifier 'cap'
+     1>d:\vs_projects\fingercounter\fingercounter\main.cpp(9): error C2065: 'cap': undeclared identifier
+     1>d:\vs_projects\fingercounter\fingercounter\main.cpp(10): error C2065: 'cap': undeclared identifier
+     1>d:\vs_projects\fingercounter\fingercounter\main.cpp(10): error C2228: left of '.open' must have class/struct/union
+         d:\vs_projects\fingercounter\fingercounter\main.cpp(10): note: type is 'unknown-type'
+     1>d:\vs_projects\fingercounter\fingercounter\main.cpp(12): error C3861: 'namedWindow': identifier not found
+     1>d:\vs_projects\fingercounter\fingercounter\main.cpp(16): error C2065: 'cap': undeclared identifier
+     1>d:\vs_projects\fingercounter\fingercounter\main.cpp(17): error C3861: 'imshow': identifier not found
+     1>d:\vs_projects\fingercounter\fingercounter\main.cpp(18): error C3861: 'waitKey': identifier not found
+     1>Done Building Project "D:\VS_projects\FingerCounter\FingerCounter\FingerCounter.vcxproj" (Build target(s)) -- FAILED.
+
+Build FAILED.
+
+Time Elapsed 00:00:02.29

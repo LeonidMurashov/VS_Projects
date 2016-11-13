@@ -1,0 +1,4 @@
+﻿  main.cpp
+d:\vs_projects\crossandnil\crossandnil\main.cpp(17): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  CrossAndNil.vcxproj -> D:\VS_projects\CrossAndNil\Debug\CrossAndNil.exe
+  CrossAndNil.vcxproj -> D:\VS_projects\CrossAndNil\Debug\CrossAndNil.pdb (Partial PDB)

@@ -1,0 +1,20 @@
+﻿  main.cpp
+d:\vs_projects\cartrainer_latest рабочая скоростная\cartrainer\neuralnetwork2.h(189): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\cartrainer_latest рабочая скоростная\cartrainer\neuralnetwork2.h(206): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\cartrainer_latest рабочая скоростная\cartrainer\neuralnetwork2.h(222): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\cartrainer_latest рабочая скоростная\cartrainer\neuralnetwork2.h(225): warning C4018: >: несоответствие типов со знаком и без знака
+d:\vs_projects\cartrainer_latest рабочая скоростная\cartrainer\neuralnetwork2.h(308): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\cartrainer_latest рабочая скоростная\cartrainer\neuralnetwork2.h(370): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\cartrainer_latest рабочая скоростная\cartrainer\neuralnetwork2.h(372): warning C4018: >: несоответствие типов со знаком и без знака
+d:\vs_projects\cartrainer_latest рабочая скоростная\cartrainer\neuralnetwork2.h(390): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\cartrainer_latest рабочая скоростная\cartrainer\neuralnetwork2.h(411): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\cartrainer_latest рабочая скоростная\cartrainer\neuralnetwork2.h(415): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\cartrainer_latest рабочая скоростная\cartrainer\neuralnetwork2.h(420): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\cartrainer_latest рабочая скоростная\cartrainer\neuralnetwork2.h(437): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\cartrainer_latest рабочая скоростная\cartrainer\neuralnetwork2.h(439): warning C4018: >: несоответствие типов со знаком и без знака
+d:\vs_projects\cartrainer_latest рабочая скоростная\cartrainer\neuralnetwork2.h(583): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\cartrainer_latest рабочая скоростная\cartrainer\main.cpp(140): warning C4309: аргумент: усечение константного значения
+d:\vs_projects\cartrainer_latest рабочая скоростная\cartrainer\main.cpp(161): warning C4309: аргумент: усечение константного значения
+d:\vs_projects\cartrainer_latest рабочая скоростная\cartrainer\main.cpp(210): warning C4018: <: несоответствие типов со знаком и без знака
+  CarTrainer.vcxproj -> D:\VS_projects\CarTrainer_latest рабочая скоростная\Debug\CarTrainer.exe
+  CarTrainer.vcxproj -> D:\VS_projects\CarTrainer_latest рабочая скоростная\Debug\CarTrainer.pdb (Partial PDB)

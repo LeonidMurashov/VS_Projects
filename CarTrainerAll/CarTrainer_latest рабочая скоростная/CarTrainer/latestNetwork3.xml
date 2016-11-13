@@ -1,0 +1,29 @@
+<NeuralNetwork>
+    <Layer type="input" transferFunction="0" size="7"/>
+    <Layer type="output" transferFunction="1">
+        <Neuron>
+            <Bias>0.95126481704499088</Bias>
+            <Weights>
+                <Weight>-0.093010201959823541</Weight>
+                <Weight>-0.16586734324111155</Weight>
+                <Weight>0.18959572939529476</Weight>
+                <Weight>-0.12634220452645992</Weight>
+                <Weight>0.26421449276093989</Weight>
+                <Weight>1.9169168297638968</Weight>
+                <Weight>-0.60009982941196249</Weight>
+            </Weights>
+        </Neuron>
+        <Neuron>
+            <Bias>-1.2289304344055081</Bias>
+            <Weights>
+                <Weight>-0.54950430493385516</Weight>
+                <Weight>0.095387162652833285</Weight>
+                <Weight>0.47703773648689618</Weight>
+                <Weight>0.065432483175189848</Weight>
+                <Weight>-1.0450885625184319</Weight>
+                <Weight>-0.44600423999001731</Weight>
+                <Weight>-2.2795684175210646</Weight>
+            </Weights>
+        </Neuron>
+    </Layer>
+</NeuralNetwork>

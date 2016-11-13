@@ -1,0 +1,8 @@
+﻿  main.cpp
+main.cpp(141): warning C4309: аргумент: усечение константного значения
+main.cpp(162): warning C4309: аргумент: усечение константного значения
+USBUART.obj : error LNK2001: неразрешенный внешний символ "__imp_FT_Close"
+USBUART.obj : error LNK2001: неразрешенный внешний символ "__imp_FT_Open"
+USBUART.obj : error LNK2001: неразрешенный внешний символ "__imp_FT_Write"
+USBUART.obj : error LNK2001: неразрешенный внешний символ "__imp_FT_SetBitMode"
+D:\VS_projects\CarTrainer_latest рабочая скоростная\x64\Release\CarTrainer.exe : fatal error LNK1120: неразрешенных внешних элементов: 4

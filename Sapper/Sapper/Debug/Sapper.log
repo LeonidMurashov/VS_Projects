@@ -1,0 +1,10 @@
+﻿  main.cpp
+d:\vs_projects\sapper\sapper\main.cpp(33): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+d:\vs_projects\sapper\sapper\main.cpp(35): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+d:\vs_projects\sapper\sapper\main.cpp(54): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\sapper\sapper\main.cpp(55): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\sapper\sapper\main.cpp(57): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+d:\vs_projects\sapper\sapper\main.cpp(59): warning C4244: аргумент: преобразование "double" в "float", возможна потеря данных
+d:\vs_projects\sapper\sapper\main.cpp(65): warning C4018: <: несоответствие типов со знаком и без знака
+  Sapper.vcxproj -> D:\VS_projects\Sapper\Debug\Sapper.exe
+  Sapper.vcxproj -> D:\VS_projects\Sapper\Debug\Sapper.pdb (Partial PDB)

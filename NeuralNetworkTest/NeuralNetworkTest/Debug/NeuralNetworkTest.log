@@ -1,0 +1,13 @@
+﻿  main.cpp
+d:\vs_projects\neuralnetworktest\neuralnetworktest\neuralnetwork.h(292): warning C4002: слишком много фактических параметров для макроопределения "assert"
+d:\vs_projects\neuralnetworktest\neuralnetworktest\neuralnetwork.h(294): warning C4002: слишком много фактических параметров для макроопределения "assert"
+d:\vs_projects\neuralnetworktest\neuralnetworktest\neuralnetwork.h(509): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\neuralnetworktest\neuralnetworktest\neuralnetwork.h(518): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\neuralnetworktest\neuralnetworktest\neuralnetwork.h(528): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\neuralnetworktest\neuralnetworktest\neuralnetwork.h(531): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\neuralnetworktest\neuralnetworktest\neuralnetwork.h(543): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\neuralnetworktest\neuralnetworktest\neuralnetwork.h(546): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\neuralnetworktest\neuralnetworktest\neuralnetwork.h(549): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\neuralnetworktest\neuralnetworktest\main.cpp(10): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  NeuralNetworkTest.vcxproj -> D:\VS_projects\NeuralNetworkTest\Debug\NeuralNetworkTest.exe
+  NeuralNetworkTest.vcxproj -> D:\VS_projects\NeuralNetworkTest\Debug\NeuralNetworkTest.pdb (Partial PDB)

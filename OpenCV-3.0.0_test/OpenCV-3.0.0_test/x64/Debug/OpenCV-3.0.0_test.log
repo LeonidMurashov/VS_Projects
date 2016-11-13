@@ -1,0 +1,13 @@
+﻿Build started 22.02.2016 15:43:24.
+     1>Project "D:\VS_projects\OpenCV-3.0.0_test\OpenCV-3.0.0_test\OpenCV-3.0.0_test.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /I"C:\OpenCV-3.1.0\build\x64\vc14\..\..\include" /ZI /nologo /W3 /WX- /sdl /Od /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Debug\\" /Fd"x64\Debug\vc140.pdb" /Gd /TP /errorReport:prompt main.cpp
+         main.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\VS_projects\OpenCV-3.0.0_test\x64\Debug\OpenCV-3.0.0_test.exe" /INCREMENTAL /NOLOGO /LIBPATH:"C:\OpenCV-3.1.0\build\x64\vc14\lib" opencv_world310d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\VS_projects\OpenCV-3.0.0_test\x64\Debug\OpenCV-3.0.0_test.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\VS_projects\OpenCV-3.0.0_test\x64\Debug\OpenCV-3.0.0_test.lib" /MACHINE:X64 x64\Debug\main.obj
+         OpenCV-3.0.0_test.vcxproj -> D:\VS_projects\OpenCV-3.0.0_test\x64\Debug\OpenCV-3.0.0_test.exe
+     1>Done Building Project "D:\VS_projects\OpenCV-3.0.0_test\OpenCV-3.0.0_test\OpenCV-3.0.0_test.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:05.60

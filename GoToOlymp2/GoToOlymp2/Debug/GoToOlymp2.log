@@ -1,0 +1,10 @@
+﻿  main.cpp
+d:\vs_projects\gotoolymp2\gotoolymp2\main.cpp(59): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\gotoolymp2\gotoolymp2\main.cpp(85): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\gotoolymp2\gotoolymp2\main.cpp(96): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\gotoolymp2\gotoolymp2\main.cpp(126): warning C4267: инициализация: преобразование из "size_t" в "short"; возможна потеря данных
+d:\vs_projects\gotoolymp2\gotoolymp2\main.cpp(184): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\gotoolymp2\gotoolymp2\main.cpp(232): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\gotoolymp2\gotoolymp2\main.cpp(237): warning C4018: <: несоответствие типов со знаком и без знака
+  GoToOlymp2.vcxproj -> D:\VS_projects\GoToOlymp2\Debug\GoToOlymp2.exe
+  GoToOlymp2.vcxproj -> D:\VS_projects\GoToOlymp2\Debug\GoToOlymp2.pdb (Partial PDB)

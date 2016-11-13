@@ -1,0 +1,4 @@
+﻿MSVCRT.lib(exe_winmain.obj) : error LNK2019: ссылка на неразрешенный внешний символ _WinMain@16 в функции "int __cdecl __scrt_common_main_seh(void)" (?__scrt_common_main_seh@@YAHXZ)
+D:\libs\SDL2-2.0.4_MSVC\lib\x64\SDL2.lib : warning LNK4272: тип компьютера библиотеки "x64" конфликтует с типом целевого компьютера "X86"
+D:\libs\SDL2-2.0.4_MSVC\lib\x64\SDL2main.lib : warning LNK4272: тип компьютера библиотеки "x64" конфликтует с типом целевого компьютера "X86"
+D:\VS_projects\SDL_test\Debug\SDL_test.exe : fatal error LNK1120: неразрешенных внешних элементов: 1

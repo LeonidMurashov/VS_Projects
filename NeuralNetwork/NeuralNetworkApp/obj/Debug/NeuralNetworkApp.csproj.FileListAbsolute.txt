@@ -1,0 +1,16 @@
+D:\Windows\Documents\Visual Studio 2015\Projects\NeuralNetwork\NeuralNetworkApp\bin\Debug\NeuralNetworkApp.exe.config
+D:\Windows\Documents\Visual Studio 2015\Projects\NeuralNetwork\NeuralNetworkApp\bin\Debug\NeuralNetworkApp.exe
+D:\Windows\Documents\Visual Studio 2015\Projects\NeuralNetwork\NeuralNetworkApp\bin\Debug\NeuralNetworkApp.pdb
+D:\Windows\Documents\Visual Studio 2015\Projects\NeuralNetwork\NeuralNetworkApp\bin\Debug\NeuralNetwork.dll
+D:\Windows\Documents\Visual Studio 2015\Projects\NeuralNetwork\NeuralNetworkApp\bin\Debug\NeuralNetwork.pdb
+D:\Windows\Documents\Visual Studio 2015\Projects\NeuralNetwork\NeuralNetworkApp\obj\Debug\NeuralNetworkApp.csprojResolveAssemblyReference.cache
+D:\Windows\Documents\Visual Studio 2015\Projects\NeuralNetwork\NeuralNetworkApp\obj\Debug\NeuralNetworkApp.exe
+D:\Windows\Documents\Visual Studio 2015\Projects\NeuralNetwork\NeuralNetworkApp\obj\Debug\NeuralNetworkApp.pdb
+D:\VS_projects\NeuralNetwork\NeuralNetworkApp\bin\Debug\NeuralNetworkApp.exe.config
+D:\VS_projects\NeuralNetwork\NeuralNetworkApp\obj\Debug\NeuralNetworkApp.exe
+D:\VS_projects\NeuralNetwork\NeuralNetworkApp\obj\Debug\NeuralNetworkApp.pdb
+D:\VS_projects\NeuralNetwork\NeuralNetworkApp\bin\Debug\NeuralNetworkApp.exe
+D:\VS_projects\NeuralNetwork\NeuralNetworkApp\bin\Debug\NeuralNetworkApp.pdb
+D:\VS_projects\NeuralNetwork\NeuralNetworkApp\bin\Debug\NeuralNetwork.dll
+D:\VS_projects\NeuralNetwork\NeuralNetworkApp\bin\Debug\NeuralNetwork.pdb
+D:\VS_projects\NeuralNetwork\NeuralNetworkApp\obj\Debug\NeuralNetworkApp.csprojResolveAssemblyReference.cache

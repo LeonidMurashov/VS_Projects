@@ -1,0 +1,5 @@
+﻿  main.cpp
+d:\vs_projects\sfml+box2d\sfml+box2d\main.cpp(28): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+d:\vs_projects\sfml+box2d\sfml+box2d\main.cpp(55): warning C4244: =: преобразование "int" в "float32", возможна потеря данных
+  SFML+BOX2D.vcxproj -> D:\VS_projects\SFML+BOX2D\x64\Debug\SFML+BOX2D.exe
+  SFML+BOX2D.vcxproj -> D:\VS_projects\SFML+BOX2D\x64\Debug\SFML+BOX2D.pdb (Partial PDB)

@@ -1,0 +1,10 @@
+D:\Windows\Documents\Visual Studio 2015\Projects\NeuralNetwork\NeuralNetwork\bin\Debug\NeuralNetwork.dll
+D:\Windows\Documents\Visual Studio 2015\Projects\NeuralNetwork\NeuralNetwork\bin\Debug\NeuralNetwork.pdb
+D:\Windows\Documents\Visual Studio 2015\Projects\NeuralNetwork\NeuralNetwork\obj\Debug\NeuralNetwork.csprojResolveAssemblyReference.cache
+D:\Windows\Documents\Visual Studio 2015\Projects\NeuralNetwork\NeuralNetwork\obj\Debug\NeuralNetwork.dll
+D:\Windows\Documents\Visual Studio 2015\Projects\NeuralNetwork\NeuralNetwork\obj\Debug\NeuralNetwork.pdb
+D:\VS_projects\NeuralNetwork\NeuralNetwork\bin\Debug\NeuralNetwork.dll
+D:\VS_projects\NeuralNetwork\NeuralNetwork\bin\Debug\NeuralNetwork.pdb
+D:\VS_projects\NeuralNetwork\NeuralNetwork\obj\Debug\NeuralNetwork.csprojResolveAssemblyReference.cache
+D:\VS_projects\NeuralNetwork\NeuralNetwork\obj\Debug\NeuralNetwork.dll
+D:\VS_projects\NeuralNetwork\NeuralNetwork\obj\Debug\NeuralNetwork.pdb

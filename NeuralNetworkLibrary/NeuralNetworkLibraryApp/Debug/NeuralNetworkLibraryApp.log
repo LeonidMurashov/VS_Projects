@@ -1,0 +1,4 @@
+﻿  stdafx.cpp
+  NeuralNetworkLibraryApp.cpp
+  Создание кода...
+LINK : fatal error LNK1104: не удается открыть файл "D:\VS_projects\NeuralNetworkLibrary\Debug\NeuralNetworkLibrary.lib"

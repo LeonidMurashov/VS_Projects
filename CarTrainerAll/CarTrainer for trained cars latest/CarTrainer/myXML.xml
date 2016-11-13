@@ -1,0 +1,17 @@
+<NeuralNetwork>
+    <Layer type="input" transferFunction="0" size="7"/>
+    <Layer type="output" transferFunction="1">
+        <Neuron>
+            <Bias>1.4566209885923678</Bias>
+            <Weights>
+                <Weight>-0.018234934948177479</Weight>
+                <Weight>-0.206124768288489</Weight>
+                <Weight>0.43375171371007959</Weight>
+                <Weight>-0.21173116135209868</Weight>
+                <Weight>-0.35905346022518103</Weight>
+                <Weight>1.8073592427636247</Weight>
+                <Weight>-0.67574032237225501</Weight>
+            </Weights>
+        </Neuron>
+    </Layer>
+</NeuralNetwork>

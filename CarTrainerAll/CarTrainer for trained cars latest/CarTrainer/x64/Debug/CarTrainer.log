@@ -1,0 +1,17 @@
+﻿  USBUART.cpp
+d:\vs_projects\cartrainer_latest рабочая скоростная\cartrainer\usbuart.cpp(8): warning C4305: аргумент: усечение из "int" к "UCHAR"
+d:\vs_projects\cartrainer_latest рабочая скоростная\cartrainer\usbuart.cpp(8): warning C4309: аргумент: усечение константного значения
+d:\vs_projects\cartrainer_latest рабочая скоростная\cartrainer\usbuart.cpp(14): warning C4309: аргумент: усечение константного значения
+  tinyxml2.cpp
+  SerialClass.cpp
+d:\vs_projects\cartrainer_latest рабочая скоростная\cartrainer\serialclass.cpp(200): warning C4267: аргумент: преобразование из "size_t" в "DWORD"; возможна потеря данных
+  main.cpp
+d:\vs_projects\cartrainer_latest рабочая скоростная\cartrainer\main.cpp(140): warning C4309: аргумент: усечение константного значения
+d:\vs_projects\cartrainer_latest рабочая скоростная\cartrainer\main.cpp(161): warning C4309: аргумент: усечение константного значения
+  Создание кода...
+USBUART.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_FT_Open в функции "public: __cdecl USBUART::USBUART(void)" (??0USBUART@@QEAA@XZ)
+USBUART.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_FT_Close в функции "public: __cdecl USBUART::~USBUART(void)" (??1USBUART@@QEAA@XZ)
+USBUART.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_FT_Write в функции "public: bool __cdecl USBUART::WriteData(char)" (?WriteData@USBUART@@QEAA_ND@Z)
+USBUART.obj : error LNK2019: ссылка на неразрешенный внешний символ __imp_FT_SetBitMode в функции "public: __cdecl USBUART::USBUART(void)" (??0USBUART@@QEAA@XZ)
+ftd2xx.lib : warning LNK4272: тип компьютера библиотеки "X86" конфликтует с типом целевого компьютера "x64"
+D:\VS_projects\CarTrainer_latest рабочая скоростная\x64\Debug\CarTrainer.exe : fatal error LNK1120: неразрешенных внешних элементов: 4

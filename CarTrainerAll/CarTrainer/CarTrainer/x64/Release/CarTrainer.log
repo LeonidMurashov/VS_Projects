@@ -1,0 +1,9 @@
+﻿  main.cpp
+  SerialClass.cpp
+SerialClass.cpp(200): warning C4267: аргумент: преобразование из "size_t" в "DWORD"; возможна потеря данных
+  tinyxml2.cpp
+  Создание кода
+  All 1037 functions were compiled because no usable IPDB/IOBJ from previous compilation was found.
+  Создание кода завершено
+  CarTrainer.vcxproj -> D:\VS_projects\CarTrainer\x64\Release\CarTrainer.exe
+  CarTrainer.vcxproj -> D:\VS_projects\CarTrainer\x64\Release\CarTrainer.pdb (Full PDB)

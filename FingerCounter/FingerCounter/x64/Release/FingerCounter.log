@@ -1,0 +1,20 @@
+﻿Build started 28.02.2016 12:12:58.
+     1>Project "D:\VS_projects\FingerCounter\FingerCounter\FingerCounter.vcxproj" on node 2 (Build target(s)).
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /sdl /O2 /Oi /GL /D _MBCS /Gm- /EHsc /MD /GS /Gy /fp:precise /Zc:wchar_t /Zc:forScope /Zc:inline /Fo"x64\Release\\" /Fd"x64\Release\vc140.pdb" /Gd /TP /errorReport:prompt main.cpp
+         main.cpp
+     1>main.cpp(20): warning C4474: 'printf' : too many arguments passed for format string
+         main.cpp(20): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"D:\VS_projects\FingerCounter\x64\Release\FingerCounter.exe" /NOLOGO opencv_ts300d.lib opencv_world300d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /Debug /PDB:"D:\VS_projects\FingerCounter\x64\Release\FingerCounter.pdb" /OPT:REF /OPT:ICF /LTCG:incremental /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\VS_projects\FingerCounter\x64\Release\FingerCounter.lib" /MACHINE:X64 x64\Release\main.obj
+         Generating code
+         1 of 54 functions ( 1.9%) were compiled, the rest were copied from previous compilation.
+           0 functions were new in current compilation
+           0 functions had inline decision re-evaluated but remain unchanged
+         Finished generating code
+         FingerCounter.vcxproj -> D:\VS_projects\FingerCounter\x64\Release\FingerCounter.exe
+     1>Done Building Project "D:\VS_projects\FingerCounter\FingerCounter\FingerCounter.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.07

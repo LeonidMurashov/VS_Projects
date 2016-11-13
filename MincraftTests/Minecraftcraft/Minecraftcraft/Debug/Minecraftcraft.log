@@ -1,0 +1,17 @@
+﻿Build started 20.12.2015 14:53:45.
+     1>Project "D:\VS_projects\Minecraftcraft\Minecraftcraft\Minecraftcraft.vcxproj" on node 2 (Rebuild target(s)).
+     1>ClCompile:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"D:\SFML-2.0\include" /ZI /nologo /W3 /WX- /Od /Oy- /D SFML_DYNAMIC /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt main.cpp
+         main.cpp
+     1>d:\vs_projects\minecraftcraft\minecraftcraft\main.cpp(31): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+     1>d:\vs_projects\minecraftcraft\minecraftcraft\main.cpp(32): warning C4390: ";": обнаружен пустой контролируемый оператор; это правильно?
+       Link:
+         c:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"D:\VS_projects\Minecraftcraft\Debug\Minecraftcraft.exe" /NOLOGO /LIBPATH:"D:\SFML-2.0\lib" "sfml-graphics-d.lib" "sfml-window-d.lib" "sfml-system-d.lib" "sfml-audio-d.lib" opengl32.lib glu32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\Minecraftcraft.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"D:\VS_projects\Minecraftcraft\Debug\Minecraftcraft.pdb" /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"D:\VS_projects\Minecraftcraft\Debug\Minecraftcraft.lib" /MACHINE:X86 Debug\main.obj
+         Minecraftcraft.vcxproj -> D:\VS_projects\Minecraftcraft\Debug\Minecraftcraft.exe
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /outputresource:"D:\VS_projects\Minecraftcraft\Debug\Minecraftcraft.exe;#1" /manifest Debug\Minecraftcraft.exe.intermediate.manifest
+     1>Done Building Project "D:\VS_projects\Minecraftcraft\Minecraftcraft\Minecraftcraft.vcxproj" (Rebuild target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:02.46

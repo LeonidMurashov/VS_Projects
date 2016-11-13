@@ -1,0 +1,4 @@
+﻿  main.cpp
+main.cpp(5): fatal error C1083: Не удается открыть файл включение: SFML/Graphics.hpp: No such file or directory
+  SerialClass.cpp
+  tinyxml2.cpp

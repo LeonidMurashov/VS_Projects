@@ -1,0 +1,5 @@
+﻿  serial.cpp
+d:\vs_projects\arduino_firmata\arduino_firmata\serial.cpp(18): fatal error C1083: Не удается открыть файл включение: wx/wx.h: No such file or directory
+  main.cpp
+d:\vs_projects\arduino_firmata\arduino_firmata\serial.h(4): fatal error C1083: Не удается открыть файл включение: wx/wx.h: No such file or directory
+  Создание кода...

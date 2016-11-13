@@ -1,0 +1,5 @@
+﻿  main.cpp
+d:\vs_projects\sdl_test\sdl_test\main.cpp(16): warning C4297: SDL_main: ожидается, что функция не будет выдавать исключения, но она это делает
+  d:\vs_projects\sdl_test\sdl_test\main.cpp(16): note: для функции указан атрибут __declspec(nothrow), throw(), noexcept(true) или noexcept
+  SDL_test.vcxproj -> D:\VS_projects\SDL_test\x64\Debug\SDL_test.exe
+  SDL_test.vcxproj -> D:\VS_projects\SDL_test\x64\Debug\SDL_test.pdb (Partial PDB)
