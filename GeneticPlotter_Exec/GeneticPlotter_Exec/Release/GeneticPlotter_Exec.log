@@ -1,0 +1,3 @@
+﻿  main.cpp
+main.cpp(32): warning C4007: WinMain: должен быть "__stdcall"
+LINK : fatal error LNK1561: точка входа должна быть определена

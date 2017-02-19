@@ -129,7 +129,7 @@ int main()
 	srand(time(NULL));
 	FillArray(features, featuresFileAdress);
 
-	vector<int> sizes = { featuresCount, 15, 1 };
+	vector<int> sizes = { (int)features[0].size() - 2, 15, 1 };
 	//int i = 0;
 	vector<TransferFunction> tFuncs = { TransferFunction::None,
 		TransferFunction::Sigmoid,

@@ -1,0 +1,5 @@
+﻿  main.cpp
+d:\vs_projects\codeforces_olymp\codeforces_olymp\main.cpp(10): warning C4018: <: несоответствие типов со знаком и без знака
+d:\vs_projects\codeforces_olymp\codeforces_olymp\main.cpp(18): warning C4018: <: несоответствие типов со знаком и без знака
+  Codeforces_olymp.vcxproj -> D:\VS_projects\Codeforces_olymp\Debug\Codeforces_olymp.exe
+  Codeforces_olymp.vcxproj -> D:\VS_projects\Codeforces_olymp\Debug\Codeforces_olymp.pdb (Partial PDB)

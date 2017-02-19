@@ -1,2 +1,12 @@
-﻿  SFML_JoysickGame.vcxproj -> D:\VS_projects\SFML_JoysickGame\x64\Release\SFML_JoysickGame.exe
+﻿  main.cpp
+main.cpp(39): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+main.cpp(71): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+main.cpp(109): warning C4244: аргумент: преобразование "double" в "float32", возможна потеря данных
+main.cpp(129): warning C4244: аргумент: преобразование "double" в "float32", возможна потеря данных
+  Создание кода
+  11 of 169 functions ( 6.5%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  SFML_JoysickGame.vcxproj -> D:\VS_projects\SFML_JoysickGame\x64\Release\SFML_JoysickGame.exe
   SFML_JoysickGame.vcxproj -> D:\VS_projects\SFML_JoysickGame\x64\Release\SFML_JoysickGame.pdb (Full PDB)

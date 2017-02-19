@@ -1,20 +1,177 @@
-#include<iostream> 
+#define _WIN32_WINNT 0x0501 
+
+#include <windows.h> 
+#include <string.h> 
+#include <stdio.h> 
+#include "dirent.h"
+
+int main(int argc, char *argv[])
+{
+	/*WIN32_FIND_DATA FindFileData;
+	HANDLE hFind = INVALID_HANDLE_VALUE;
+	char DirSpec[MAX_PATH];  // directory specification 
+	DWORD dwError;
+
+	const char * a = "D://";
+
+	printf("Target directory is %s.\n", a);
+	strncpy_s(DirSpec, a, strlen(a) + 1);
+	strncat_s(DirSpec, "\\*", 3);
+
+	hFind = FindFirstFile((LPCWSTR)DirSpec, &FindFileData);
+
+	if (hFind == INVALID_HANDLE_VALUE)
+	{
+		printf("Invalid file handle. Error is %u\n", GetLastError());
+		return (-1);
+	}
+	else
+	{
+		printf("First file name is %s\n", FindFileData.cFileName);
+		while (FindNextFile(hFind, &FindFileData) != 0)
+		{
+			printf("Next file name is %s\n", FindFileData.cFileName);
+		}
+
+		dwError = GetLastError();
+		FindClose(hFind);
+		if (dwError != ERROR_NO_MORE_FILES)
+		{
+			printf("FindNextFile error. Error is %u\n", dwError);
+			return (-1);
+		}
+	}
+	return (0);*/
+	DIR *dir;
+	struct dirent *ent;
+	if ((dir = opendir("D:\\")) != NULL) {
+		/* print all the files and directories within directory */
+		while ((ent = readdir(dir)) != NULL) {
+			printf("%s\n", ent->d_name);
+		}
+		closedir(dir);
+	}
+	else {
+		/* could not open directory */
+		perror("");
+		return EXIT_FAILURE;
+	}
+}
+
+/*#include<windows.h>
+#include<iostream>
 #include <string>
-#include <sstream>
-#include <algorithm>
-#include <iterator>
-#include <vector>
-#include <string>
+#include <comutil.h>
+#pragma comment(lib, "comsuppw" ) // link with comsuppw.lib
+
+int main() {
+	WIN32_FIND_DATA FindFileData;
+	HANDLE hf;
+	hf = FindFirstFile(L"d:\\*", &FindFileData);
+	if (hf != INVALID_HANDLE_VALUE) {
+		do {
+			_bstr_t b(FindFileData.cFileName);
+			const char* c = b;
+			std::cout << c << "\n";
+		} while (FindNextFile(hf, &FindFileData) != 0);
+		FindClose(hf);
+	}
+}*/
+/*#include <iostream>
+#include <fstream>
 using namespace std;
 
-vector<int> a = { 1, 4, 6 , 4, 2};
+int main()
+{
+	char ch;
+	int i;
+	float f;
+	char str[80];
+	ifstream in("test");
+	if (!in) {
+		cout << "Cannot open file.\n";
+		return 1;
+	}
+	ifstream fin("D://Python//Genetic_Plotter//main.py");
+	string str;
+	fin >> str;
+	in >> i;
+	in >> f;
+	in >> ch;
+	in >> str;
+	cout << i << " " << f << " " << ch << "\n";
+	cout << str;
+	in.ñlîse();
+	return 0;
+}*/
+
+/*#include <iostream>
+#include <Windows.h>
+
+using namespace std;
+
+int main() {
+
+	LPWSTR command = L"C://Users//User//Anaconda3//python.exe";// D://Python//Genetic_Plotter//main.py";
+	LPCWSTR pythonPath = L"C://Program Files (x86)//Python35-32//python.exe";
+	LPWSTR geneticPlotterAdress = L"D://Python//Genetic_Plotter//main.py";
+	PROCESS_INFORMATION pi;
+
+	LPWSTR cmd = L"notepad";
+
+	STARTUPINFO info = { sizeof(info) };
+	PROCESS_INFORMATION processInfo;
+	if (CreateProcess(NULL, cmd, NULL, NULL, TRUE, 0, NULL, NULL, &info, &processInfo))
+	{
+		WaitForSingleObject(processInfo.hProcess, INFINITE);
+		CloseHandle(processInfo.hProcess);
+		CloseHandle(processInfo.hThread);
+	}
+	
+	TCHAR czCommandLine[] = L"Notepad";
+	CreateProcess(NULL, command, NULL, NULL, false, NULL, NULL, NULL, new STARTUPINFO(), &pi);
+	
+	//CreateProcess(pythonPath, geneticPlotterAdress, NULL, NULL, false, NULL, NULL, NULL, new STARTUPINFO(), &pi);
+	//WaitForSingleObject(pi.hProcess, (100));
+
+	// Terminate GeneticPlotter.exe
+	//TerminateProcess(pi.hProcess, NO_ERROR);
+
+	return 0;
+}*/
+/*
+std::wstring s2ws(const std::string& s)
+{
+	int len;
+	int slength = (int)s.length() + 1;
+	len = MultiByteToWideChar(CP_ACP, 0, s.c_str(), slength, 0, 0);
+	wchar_t* buf = new wchar_t[len];
+	MultiByteToWideChar(CP_ACP, 0, s.c_str(), slength, buf, len);
+	std::wstring r(buf);
+	delete[] buf;
+	return r;
+}*/
+/*
 int main() 
 {
-	for (auto b : a)
-		if (b == 2)
-			cout << "yes";
+
+	LPCWSTR geneticPlotterAdress = L"C://Users//User//Anaconda3//python.exe";
+	PROCESS_INFORMATION pi; 
+
+		// Run GeneticPlotter.exe
+	string myString = string("D://Python//Genetic_Plotter//main.py");// to_string(graphResolution.X) + " " + to_string(graphResolution.Y));// +" \"" + (string)logfileName + "\" \"" + (string)graphFile + "\"");
+	CreateProcess(geneticPlotterAdress, (LPWSTR)(std::wstring(s2ws(myString))).c_str(), NULL, NULL, false, NULL, NULL, NULL, new STARTUPINFO(), &pi);
+	WaitForSingleObject(pi.hProcess, (999));
+
+	// Terminate GeneticPlotter.exe
+	TerminateProcess(pi.hProcess, NO_ERROR);
+	string command("python D://Python//Genetic_Plotter//main.py");
+
+	FILE* in = popen(command.c_str(), "r");
+	pclose(in);
+
 	return 0;
-}
+}*/
 
 /*#include <iostream>
 #include <string>

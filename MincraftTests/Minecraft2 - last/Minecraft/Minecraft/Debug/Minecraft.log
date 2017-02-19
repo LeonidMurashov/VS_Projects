@@ -1,18 +1,2 @@
 ﻿  main.cpp
-d:\vs_projects\mincrafttests\minecraft2 - last\minecraft\minecraft\helpfile.hpp(7): warning C4305: инициализация: усечение из "double" к "float"
-d:\vs_projects\mincrafttests\minecraft2 - last\minecraft\minecraft\main.cpp(33): warning C4244: -=: преобразование "double" в "float", возможна потеря данных
-d:\vs_projects\mincrafttests\minecraft2 - last\minecraft\minecraft\main.cpp(48): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
-d:\vs_projects\mincrafttests\minecraft2 - last\minecraft\minecraft\main.cpp(49): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
-d:\vs_projects\mincrafttests\minecraft2 - last\minecraft\minecraft\main.cpp(50): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
-d:\vs_projects\mincrafttests\minecraft2 - last\minecraft\minecraft\main.cpp(176): warning C4244: инициализация: преобразование "sf::Int32" в "float", возможна потеря данных
-d:\vs_projects\mincrafttests\minecraft2 - last\minecraft\minecraft\main.cpp(232): warning C4244: =: преобразование "float" в "int", возможна потеря данных
-d:\vs_projects\mincrafttests\minecraft2 - last\minecraft\minecraft\main.cpp(233): warning C4244: =: преобразование "float" в "int", возможна потеря данных
-d:\vs_projects\mincrafttests\minecraft2 - last\minecraft\minecraft\main.cpp(234): warning C4244: =: преобразование "float" в "int", возможна потеря данных
-d:\vs_projects\mincrafttests\minecraft2 - last\minecraft\minecraft\main.cpp(255): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
-d:\vs_projects\mincrafttests\minecraft2 - last\minecraft\minecraft\main.cpp(256): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
-d:\vs_projects\mincrafttests\minecraft2 - last\minecraft\minecraft\main.cpp(257): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
-d:\vs_projects\mincrafttests\minecraft2 - last\minecraft\minecraft\main.cpp(274): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
-d:\vs_projects\mincrafttests\minecraft2 - last\minecraft\minecraft\main.cpp(275): warning C4244: инициализация: преобразование "float" в "int", возможна потеря данных
-sfml-main-d.lib(SFML_Main.cpp.obj) : error LNK2001: неразрешенный внешний символ "__imp____argc"
-sfml-main-d.lib(SFML_Main.cpp.obj) : error LNK2001: неразрешенный внешний символ "__imp____argv"
-D:\VS_projects\MincraftTests\Minecraft2 - last\Minecraft\Debug\Minecraft.exe : fatal error LNK1120: неразрешенных внешних элементов: 2
+d:\vs_projects\mincrafttests\minecraft2 - last\minecraft\minecraft\main.cpp(1): fatal error C1083: Не удается открыть файл включение: SFML/Graphics.hpp: No such file or directory

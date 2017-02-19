@@ -1,0 +1,17 @@
+﻿Построение начато 18.02.2017 19:52:32.
+     1>Проект "D:\VS_projects\Sapper_SFML\Minecraft\Minecraft\Minecraft.vcxproj" в узле 2 (целевые объекты build).
+     1>InitializeBuildStatus:
+         Создание "Debug\Minecraft.unsuccessfulbuild", так как было задано "AlwaysCreate".
+       ClCompile:
+         Для всех выходных данных обновления не требуется.
+       Link:
+         Для всех выходных данных обновления не требуется.
+         Minecraft.vcxproj -> D:\VS_projects\Sapper_SFML\Minecraft\Debug\Minecraft.exe
+       FinalizeBuildStatus:
+         Файл "Debug\Minecraft.unsuccessfulbuild" удаляется.
+         Обращение к "Debug\Minecraft.lastbuildstate".
+     1>Построение проекта "D:\VS_projects\Sapper_SFML\Minecraft\Minecraft\Minecraft.vcxproj" завершено (целевые объекты build).
+
+Построение успешно завершено.
+
+Затраченное время: 00:00:00.09
