@@ -1,0 +1,11 @@
+﻿C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V140\Microsoft.CppBuild.targets(392,5): warning MSB8028: The intermediate directory (x64\Release\) contains files shared from another project (SFML_JoysickGame.vcxproj).  This can lead to incorrect clean and rebuild behavior.
+  main.cpp
+main.cpp(39): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+main.cpp(71): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Создание кода
+  10 of 156 functions ( 6.4%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  Создание кода завершено
+  SFML_JoysickGame.vcxproj -> D:\VS_projects\SFML_testPlatformer\x64\Release\SFML_testPlatformer.exe
+  SFML_JoysickGame.vcxproj -> D:\VS_projects\SFML_testPlatformer\x64\Release\SFML_testPlatformer.pdb (Full PDB)

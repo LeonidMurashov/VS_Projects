@@ -1,0 +1,7 @@
+﻿  main.cpp
+main.cpp(39): warning C4244: аргумент: преобразование "int" в "float", возможна потеря данных
+main.cpp(71): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+main.cpp(109): warning C4244: аргумент: преобразование "double" в "float32", возможна потеря данных
+main.cpp(129): warning C4244: аргумент: преобразование "double" в "float32", возможна потеря данных
+main.cpp(137): warning C4018: <: несоответствие типов со знаком и без знака
+sfml-graphics.lib(sfml-graphics-2.dll) : fatal error LNK1112: тип компьютера модуля "x64" противоречит типу целевого компьютера "X86"
