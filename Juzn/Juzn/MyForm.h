@@ -24,16 +24,6 @@ namespace Juzn {
 	private: System::Windows::Forms::RadioButton^  Check_Rifle;
 	private: System::Windows::Forms::CheckBox^  checkBox1;
 
-
-
-
-
-
-
-
-
-
-			 Graphics ^ g;
 	public:
 		MyForm(void)
 		{
@@ -103,8 +93,8 @@ namespace Juzn {
 			this->Check_Glider = (gcnew System::Windows::Forms::RadioButton());
 			this->Check_Dot = (gcnew System::Windows::Forms::RadioButton());
 			this->Check_Rifle = (gcnew System::Windows::Forms::RadioButton());
-			this->label2 = (gcnew System::Windows::Forms::Label());
 			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
+			this->label2 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->trackBar1))->BeginInit();
 			this->tableLayoutPanel1->SuspendLayout();
@@ -248,15 +238,6 @@ namespace Juzn {
 			this->Check_Rifle->Text = L"Ружьё";
 			this->Check_Rifle->UseVisualStyleBackColor = true;
 			// 
-			// label2
-			// 
-			this->label2->AutoSize = true;
-			this->label2->Location = System::Drawing::Point(194, 12);
-			this->label2->Name = L"label2";
-			this->label2->Size = System::Drawing::Size(10, 13);
-			this->label2->TabIndex = 4;
-			this->label2->Text = L" ";
-			// 
 			// checkBox1
 			// 
 			this->checkBox1->AutoSize = true;
@@ -268,6 +249,15 @@ namespace Juzn {
 			this->checkBox1->TabIndex = 9;
 			this->checkBox1->Text = L"Замкнутость";
 			this->checkBox1->UseVisualStyleBackColor = true;
+			// 
+			// label2
+			// 
+			this->label2->AutoSize = true;
+			this->label2->Location = System::Drawing::Point(194, 12);
+			this->label2->Name = L"label2";
+			this->label2->Size = System::Drawing::Size(10, 13);
+			this->label2->TabIndex = 4;
+			this->label2->Text = L" ";
 			// 
 			// MyForm
 			// 
@@ -345,17 +335,6 @@ namespace Juzn {
 				for (int j = 0; j < h; j++)
 				SetPixel(i, j, r->NextDouble() < .5f);
 			
-			/*for (int i = 0; i < w; i++)
-				for (int j = 0; j < h; j++)
-					SetPixel(i, j, false);
-
-			SetPixel(1 + 5, 1 + 5, true);
-			SetPixel(2 + 5, 2 + 5, true);
-			SetPixel(3 + 5, 2 + 5, true);
-			SetPixel(1 + 5, 3 + 5, true);
-			SetPixel(2 + 5, 3 + 5, true);*/
-
-
 			Bitmap ^s = curr;
 			curr = next;
 			next = s;
@@ -376,6 +355,7 @@ namespace Juzn {
 			else
 				return neighbors == 3;
 		}
+
 
 	private: System::Void timer1_Tick(System::Object^  sender, System::EventArgs^  e) {
 
