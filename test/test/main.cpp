@@ -1,61 +1,58 @@
-#define _WIN32_WINNT 0x0501 
-
-#include <windows.h> 
-#include <string.h> 
-#include <stdio.h> 
-#include "dirent.h"
-
+ 
+#include <iostream> 
+#include <vector>
+#include <queue>
+using namespace std;
 int main(int argc, char *argv[])
 {
-	/*WIN32_FIND_DATA FindFileData;
-	HANDLE hFind = INVALID_HANDLE_VALUE;
-	char DirSpec[MAX_PATH];  // directory specification 
-	DWORD dwError;
+	vector<vector<int>> map;
+	vector<bool> levels;
+	int n, k;
+	cin >> n >> k;
 
-	const char * a = "D://";
-
-	printf("Target directory is %s.\n", a);
-	strncpy_s(DirSpec, a, strlen(a) + 1);
-	strncat_s(DirSpec, "\\*", 3);
-
-	hFind = FindFirstFile((LPCWSTR)DirSpec, &FindFileData);
-
-	if (hFind == INVALID_HANDLE_VALUE)
+	for (int i = 0; i < n; i++)
 	{
-		printf("Invalid file handle. Error is %u\n", GetLastError());
-		return (-1);
-	}
-	else
-	{
-		printf("First file name is %s\n", FindFileData.cFileName);
-		while (FindNextFile(hFind, &FindFileData) != 0)
+		int K;
+		cin >> K;
+		vector<int> level;
+		for (int j = 0; j < K; j++)
 		{
-			printf("Next file name is %s\n", FindFileData.cFileName);
+			int m;
+			cin >> m;
+			level.push_back(m);
 		}
+		map.push_back(level);
+		levels.push_back(false);
+	}
 
-		dwError = GetLastError();
-		FindClose(hFind);
-		if (dwError != ERROR_NO_MORE_FILES)
-		{
-			printf("FindNextFile error. Error is %u\n", dwError);
-			return (-1);
-		}
+	queue<int> q;
+	int level = 0;
+	vector<int> last;
+	q.push(k);
+
+	while (!q.empty())
+	{
+		int curr = q.front();
+		q.pop();
+		if (map[curr - 1].empty())
+			continue;
+		last.clear();
+		for (int e : map[curr-1])
+			if (!levels[e-1])
+			{
+				last.push_back(e);
+				q.push(e);
+			}
+		levels[curr-1] = true;
+		level++;
 	}
-	return (0);*/
-	DIR *dir;
-	struct dirent *ent;
-	if ((dir = opendir("D:\\")) != NULL) {
-		/* print all the files and directories within directory */
-		while ((ent = readdir(dir)) != NULL) {
-			printf("%s\n", ent->d_name);
-		}
-		closedir(dir);
+
+	cout << level << endl;
+	for (int e : last)
+	{
+		cout << e << " ";
 	}
-	else {
-		/* could not open directory */
-		perror("");
-		return EXIT_FAILURE;
-	}
+
 }
 
 /*#include<windows.h>
