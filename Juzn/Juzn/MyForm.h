@@ -114,7 +114,7 @@ namespace Juzn {
 			this->pictureBox1->Dock = System::Windows::Forms::DockStyle::Fill;
 			this->pictureBox1->Location = System::Drawing::Point(0, 0);
 			this->pictureBox1->Name = L"pictureBox1";
-			this->pictureBox1->Size = System::Drawing::Size(619, 511);
+			this->pictureBox1->Size = System::Drawing::Size(887, 645);
 			this->pictureBox1->SizeMode = System::Windows::Forms::PictureBoxSizeMode::Zoom;
 			this->pictureBox1->TabIndex = 0;
 			this->pictureBox1->TabStop = false;
@@ -263,7 +263,7 @@ namespace Juzn {
 			// 
 			this->AutoScaleDimensions = System::Drawing::SizeF(6, 13);
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
-			this->ClientSize = System::Drawing::Size(619, 511);
+			this->ClientSize = System::Drawing::Size(887, 645);
 			this->Controls->Add(this->label2);
 			this->Controls->Add(this->tableLayoutPanel1);
 			this->Controls->Add(this->pictureBox1);
