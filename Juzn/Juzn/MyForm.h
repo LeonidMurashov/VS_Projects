@@ -1,5 +1,9 @@
 #pragma once
 
+#include "TextDialog.h"
+#include <vector>
+//#include <cliext/vector>
+std::vector<std::vector<bool>> figure;
 namespace Juzn {
 
 	using namespace System;
@@ -8,6 +12,8 @@ namespace Juzn {
 	using namespace System::Windows::Forms;
 	using namespace System::Data;
 	using namespace System::Drawing;
+	using namespace System::Collections::Generic;
+	//using namespace cliext;
 
 	/// <summary>
 	/// Сводка для MyForm
@@ -22,6 +28,11 @@ namespace Juzn {
 	private: System::Windows::Forms::RadioButton^  Check_Glider;
 	private: System::Windows::Forms::RadioButton^  Check_Dot;
 	private: System::Windows::Forms::RadioButton^  Check_Rifle;
+
+	private: System::Windows::Forms::RadioButton^  radioButton1;
+	private: System::Windows::Forms::TextBox^  h_line;
+	private: System::Windows::Forms::TextBox^  w_line;
+
 	private: System::Windows::Forms::CheckBox^  checkBox1;
 
 	public:
@@ -54,18 +65,8 @@ namespace Juzn {
 	private: System::Windows::Forms::Label^  label1;
 	private: System::Windows::Forms::TrackBar^  trackBar1;
 	private: System::Windows::Forms::TableLayoutPanel^  tableLayoutPanel1;
-	protected:
 
 
-
-
-
-
-
-	protected:
-
-	protected:
-	protected:
 	private: System::ComponentModel::IContainer^  components;
 
 	private:
@@ -94,6 +95,9 @@ namespace Juzn {
 			this->Check_Dot = (gcnew System::Windows::Forms::RadioButton());
 			this->Check_Rifle = (gcnew System::Windows::Forms::RadioButton());
 			this->checkBox1 = (gcnew System::Windows::Forms::CheckBox());
+			this->radioButton1 = (gcnew System::Windows::Forms::RadioButton());
+			this->h_line = (gcnew System::Windows::Forms::TextBox());
+			this->w_line = (gcnew System::Windows::Forms::TextBox());
 			this->label2 = (gcnew System::Windows::Forms::Label());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->trackBar1))->BeginInit();
@@ -122,11 +126,13 @@ namespace Juzn {
 			// 
 			// label1
 			// 
-			this->label1->Dock = System::Windows::Forms::DockStyle::Left;
+			this->label1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->label1->Location = System::Drawing::Point(3, 5);
 			this->label1->Margin = System::Windows::Forms::Padding(3, 5, 3, 5);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(55, 19);
+			this->label1->Size = System::Drawing::Size(71, 16);
 			this->label1->TabIndex = 2;
 			this->label1->Text = L"Скорость";
 			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -137,11 +143,11 @@ namespace Juzn {
 				| System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->trackBar1->LargeChange = 2;
-			this->trackBar1->Location = System::Drawing::Point(71, 5);
+			this->trackBar1->Location = System::Drawing::Point(80, 5);
 			this->trackBar1->Margin = System::Windows::Forms::Padding(3, 5, 3, 5);
 			this->trackBar1->Name = L"trackBar1";
 			this->trackBar1->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
-			this->trackBar1->Size = System::Drawing::Size(102, 19);
+			this->trackBar1->Size = System::Drawing::Size(93, 16);
 			this->trackBar1->TabIndex = 1;
 			this->trackBar1->Scroll += gcnew System::EventHandler(this, &MyForm::trackBar1_Scroll);
 			// 
@@ -149,9 +155,9 @@ namespace Juzn {
 			// 
 			this->tableLayoutPanel1->ColumnCount = 2;
 			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				39.20454F)));
+				44.31818F)));
 			this->tableLayoutPanel1->ColumnStyles->Add((gcnew System::Windows::Forms::ColumnStyle(System::Windows::Forms::SizeType::Percent,
-				60.79546F)));
+				55.68182F)));
 			this->tableLayoutPanel1->Controls->Add(this->trackBar1, 1, 0);
 			this->tableLayoutPanel1->Controls->Add(this->label1, 0, 0);
 			this->tableLayoutPanel1->Controls->Add(this->button1, 1, 1);
@@ -161,15 +167,19 @@ namespace Juzn {
 			this->tableLayoutPanel1->Controls->Add(this->Check_Dot, 0, 3);
 			this->tableLayoutPanel1->Controls->Add(this->Check_Rifle, 1, 4);
 			this->tableLayoutPanel1->Controls->Add(this->checkBox1, 1, 2);
+			this->tableLayoutPanel1->Controls->Add(this->radioButton1, 0, 4);
+			this->tableLayoutPanel1->Controls->Add(this->h_line, 1, 5);
+			this->tableLayoutPanel1->Controls->Add(this->w_line, 0, 5);
 			this->tableLayoutPanel1->Location = System::Drawing::Point(12, 12);
 			this->tableLayoutPanel1->Name = L"tableLayoutPanel1";
-			this->tableLayoutPanel1->RowCount = 5;
+			this->tableLayoutPanel1->RowCount = 6;
 			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Percent, 50)));
-			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 30)));
 			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 27)));
-			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 23)));
-			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 23)));
-			this->tableLayoutPanel1->Size = System::Drawing::Size(176, 132);
+			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 26)));
+			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 26)));
+			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 27)));
+			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 29)));
+			this->tableLayoutPanel1->Size = System::Drawing::Size(176, 161);
 			this->tableLayoutPanel1->TabIndex = 3;
 			this->tableLayoutPanel1->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &MyForm::tableLayoutPanel1_Paint);
 			// 
@@ -178,9 +188,9 @@ namespace Juzn {
 			this->button1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
 				| System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
-			this->button1->Location = System::Drawing::Point(71, 32);
+			this->button1->Location = System::Drawing::Point(80, 29);
 			this->button1->Name = L"button1";
-			this->button1->Size = System::Drawing::Size(102, 24);
+			this->button1->Size = System::Drawing::Size(93, 21);
 			this->button1->TabIndex = 3;
 			this->button1->Text = L"Перезапуск";
 			this->button1->UseVisualStyleBackColor = true;
@@ -188,9 +198,12 @@ namespace Juzn {
 			// 
 			// button2
 			// 
-			this->button2->Location = System::Drawing::Point(3, 32);
+			this->button2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->button2->Location = System::Drawing::Point(3, 29);
 			this->button2->Name = L"button2";
-			this->button2->Size = System::Drawing::Size(59, 22);
+			this->button2->Size = System::Drawing::Size(71, 21);
 			this->button2->TabIndex = 4;
 			this->button2->Text = L"Пауза";
 			this->button2->UseVisualStyleBackColor = true;
@@ -198,9 +211,12 @@ namespace Juzn {
 			// 
 			// button3
 			// 
-			this->button3->Location = System::Drawing::Point(3, 62);
+			this->button3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->button3->Location = System::Drawing::Point(3, 56);
 			this->button3->Name = L"button3";
-			this->button3->Size = System::Drawing::Size(62, 21);
+			this->button3->Size = System::Drawing::Size(71, 20);
 			this->button3->TabIndex = 5;
 			this->button3->Text = L"Очистить";
 			this->button3->UseVisualStyleBackColor = true;
@@ -208,21 +224,27 @@ namespace Juzn {
 			// 
 			// Check_Glider
 			// 
+			this->Check_Glider->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->Check_Glider->AutoSize = true;
-			this->Check_Glider->Location = System::Drawing::Point(71, 89);
+			this->Check_Glider->Location = System::Drawing::Point(80, 82);
 			this->Check_Glider->Name = L"Check_Glider";
-			this->Check_Glider->Size = System::Drawing::Size(67, 17);
+			this->Check_Glider->Size = System::Drawing::Size(93, 20);
 			this->Check_Glider->TabIndex = 6;
 			this->Check_Glider->Text = L"Глайдер";
 			this->Check_Glider->UseVisualStyleBackColor = true;
 			// 
 			// Check_Dot
 			// 
+			this->Check_Dot->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->Check_Dot->AutoSize = true;
 			this->Check_Dot->Checked = true;
-			this->Check_Dot->Location = System::Drawing::Point(3, 89);
+			this->Check_Dot->Location = System::Drawing::Point(3, 82);
 			this->Check_Dot->Name = L"Check_Dot";
-			this->Check_Dot->Size = System::Drawing::Size(55, 17);
+			this->Check_Dot->Size = System::Drawing::Size(71, 20);
 			this->Check_Dot->TabIndex = 7;
 			this->Check_Dot->TabStop = true;
 			this->Check_Dot->Text = L"Точка";
@@ -230,25 +252,65 @@ namespace Juzn {
 			// 
 			// Check_Rifle
 			// 
+			this->Check_Rifle->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->Check_Rifle->AutoSize = true;
-			this->Check_Rifle->Location = System::Drawing::Point(71, 112);
+			this->Check_Rifle->Location = System::Drawing::Point(80, 108);
 			this->Check_Rifle->Name = L"Check_Rifle";
-			this->Check_Rifle->Size = System::Drawing::Size(57, 17);
+			this->Check_Rifle->Size = System::Drawing::Size(93, 21);
 			this->Check_Rifle->TabIndex = 8;
 			this->Check_Rifle->Text = L"Ружьё";
 			this->Check_Rifle->UseVisualStyleBackColor = true;
 			// 
 			// checkBox1
 			// 
+			this->checkBox1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
 			this->checkBox1->AutoSize = true;
 			this->checkBox1->Checked = true;
 			this->checkBox1->CheckState = System::Windows::Forms::CheckState::Checked;
-			this->checkBox1->Location = System::Drawing::Point(71, 62);
+			this->checkBox1->Location = System::Drawing::Point(80, 56);
 			this->checkBox1->Name = L"checkBox1";
-			this->checkBox1->Size = System::Drawing::Size(92, 17);
+			this->checkBox1->Size = System::Drawing::Size(93, 20);
 			this->checkBox1->TabIndex = 9;
 			this->checkBox1->Text = L"Замкнутость";
 			this->checkBox1->UseVisualStyleBackColor = true;
+			// 
+			// radioButton1
+			// 
+			this->radioButton1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->radioButton1->AutoSize = true;
+			this->radioButton1->Location = System::Drawing::Point(3, 108);
+			this->radioButton1->Name = L"radioButton1";
+			this->radioButton1->Size = System::Drawing::Size(71, 21);
+			this->radioButton1->TabIndex = 10;
+			this->radioButton1->TabStop = true;
+			this->radioButton1->Text = L"Своя";
+			this->radioButton1->UseVisualStyleBackColor = true;
+			this->radioButton1->MouseClick += gcnew System::Windows::Forms::MouseEventHandler(this, &MyForm::radioButton1_MouseClick);
+			// 
+			// h_line
+			// 
+			this->h_line->Location = System::Drawing::Point(80, 135);
+			this->h_line->Name = L"h_line";
+			this->h_line->Size = System::Drawing::Size(93, 20);
+			this->h_line->TabIndex = 11;
+			this->h_line->Text = L"100";
+			// 
+			// w_line
+			// 
+			this->w_line->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
+				| System::Windows::Forms::AnchorStyles::Left)
+				| System::Windows::Forms::AnchorStyles::Right));
+			this->w_line->Location = System::Drawing::Point(3, 135);
+			this->w_line->Name = L"w_line";
+			this->w_line->Size = System::Drawing::Size(71, 20);
+			this->w_line->TabIndex = 12;
+			this->w_line->Text = L"100";
 			// 
 			// label2
 			// 
@@ -280,7 +342,7 @@ namespace Juzn {
 #pragma endregion
 
 		Bitmap^ curr, ^next;
-		int w = 100, h = 100, scale = 2;
+		int w, h, scale = 2;
 		int red = Color::Red.ToArgb();
 
 		bool GetPixel(int x, int y)
@@ -325,8 +387,17 @@ namespace Juzn {
 					next->SetPixel(x*scale + i, y*scale + j, (live) ? Color::Red : Color::White);
 		}
 
+		void SetWH()
+		{
+			w = Convert::ToInt32(w_line->Text);
+			h = Convert::ToInt32(h_line->Text);
+			scale = (int)std::fmax(std::round((float)200 / (float)std::fmax(w, h)), 2);
+		}
+
 		void GenerateRandom()
 		{
+			SetWH();
+
 			Random ^r = gcnew Random();
 			curr = gcnew Bitmap(w*scale, h*scale);
 			next = gcnew Bitmap(w*scale, h*scale);
@@ -340,6 +411,7 @@ namespace Juzn {
 			next = s;
 
 			pictureBox1->BackgroundImage = curr;
+			//pictureBox1->Invalidate();
 		}
 
 		bool IsAlive(int x, int y)
@@ -457,6 +529,12 @@ private: System::Void pictureBox1_MouseClick(System::Object^  sender, System::Wi
 				SetPixel(x + j, y + i, b[i][j]);
 	
 	}
+	else if (radioButton1->Checked)
+	{
+		for (int i = 0; i < figure.size(); i++)
+			for (int j = 0; j < figure[i].size(); j++)
+				SetPixel(x + j, y + i, figure[i][j]);
+	}
 	Bitmap ^c = curr;
 	curr = next;
 	next = c;
@@ -467,6 +545,8 @@ private: System::Void pictureBox1_MouseClick(System::Object^  sender, System::Wi
 
 private: System::Void button3_Click(System::Object^  sender, System::EventArgs^  e) {
 
+	SetWH();
+
 	Random ^r = gcnew Random();
 	curr = gcnew Bitmap(w*scale, h*scale);
 	next = gcnew Bitmap(w*scale, h*scale);
@@ -475,12 +555,12 @@ private: System::Void button3_Click(System::Object^  sender, System::EventArgs^ 
 		for (int j = 0; j < h; j++)
 			SetPixel(i, j, false);
 
-	int a = w / 2, b = h / 2;
+	/*int a = w / 2, b = h / 2;
 	SetPixel(1 + a, 1 + b, true);
 	SetPixel(2 + a, 2 + b, true);
 	SetPixel(3 + a, 2 + b, true);
 	SetPixel(1 + a, 3 + b, true);
-	SetPixel(2 + a, 3 + b, true);
+	SetPixel(2 + a, 3 + b, true);*/
 
 
 	Bitmap ^s = curr;
@@ -490,5 +570,40 @@ private: System::Void button3_Click(System::Object^  sender, System::EventArgs^ 
 	pictureBox1->BackgroundImage = curr;
 
 }
+private: System::Void radioButton1_MouseClick(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e) {
+	
+
+	TextDialog^ testDialog = gcnew TextDialog;
+
+	// Show testDialog as a modal dialog and determine if DialogResult = OK.
+	
+	System::Windows::Forms::DialogResult a = testDialog->ShowDialog(this);
+	//if (a == System::Windows::Forms::DialogResult::OK)
+	{
+		String ^str = testDialog->richTextBox1->Text;
+		//label2->Text = s;
+		figure.clear();
+		figure.push_back(std::vector<bool>());
+		int i = 0;
+		for (int k = 0; k < str->Length; k++)
+		{
+			if (str[k] != '\n')
+				if (str[k] == 'O' || str[k] == '.')
+					figure[i].push_back((str[k] == 'O') ? 1 : 0);
+			else
+			{
+				figure.push_back(std::vector<bool>());
+				i++;
+			}
+		}
+	}
+		// Read the contents of testDialog's TextBox.
+	//	this->txtResult->Text = testDialog->TextBox1->Text;
+	
+	delete testDialog;
+}
+
+	
+
 };
 }
