@@ -4,6 +4,7 @@
 #include <vector>
 //#include <cliext/vector>
 std::vector<std::vector<bool>> figure;
+bool map[1000][1000], mask[1000][1000];
 namespace Juzn {
 
 	using namespace System;
@@ -132,7 +133,7 @@ namespace Juzn {
 			this->label1->Location = System::Drawing::Point(3, 5);
 			this->label1->Margin = System::Windows::Forms::Padding(3, 5, 3, 5);
 			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(71, 16);
+			this->label1->Size = System::Drawing::Size(71, 22);
 			this->label1->TabIndex = 2;
 			this->label1->Text = L"Скорость";
 			this->label1->TextAlign = System::Drawing::ContentAlignment::MiddleCenter;
@@ -147,7 +148,7 @@ namespace Juzn {
 			this->trackBar1->Margin = System::Windows::Forms::Padding(3, 5, 3, 5);
 			this->trackBar1->Name = L"trackBar1";
 			this->trackBar1->RightToLeft = System::Windows::Forms::RightToLeft::Yes;
-			this->trackBar1->Size = System::Drawing::Size(93, 16);
+			this->trackBar1->Size = System::Drawing::Size(93, 22);
 			this->trackBar1->TabIndex = 1;
 			this->trackBar1->Scroll += gcnew System::EventHandler(this, &MyForm::trackBar1_Scroll);
 			// 
@@ -179,7 +180,7 @@ namespace Juzn {
 			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 26)));
 			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 27)));
 			this->tableLayoutPanel1->RowStyles->Add((gcnew System::Windows::Forms::RowStyle(System::Windows::Forms::SizeType::Absolute, 29)));
-			this->tableLayoutPanel1->Size = System::Drawing::Size(176, 161);
+			this->tableLayoutPanel1->Size = System::Drawing::Size(176, 167);
 			this->tableLayoutPanel1->TabIndex = 3;
 			this->tableLayoutPanel1->Paint += gcnew System::Windows::Forms::PaintEventHandler(this, &MyForm::tableLayoutPanel1_Paint);
 			// 
@@ -188,7 +189,7 @@ namespace Juzn {
 			this->button1->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
 				| System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
-			this->button1->Location = System::Drawing::Point(80, 29);
+			this->button1->Location = System::Drawing::Point(80, 35);
 			this->button1->Name = L"button1";
 			this->button1->Size = System::Drawing::Size(93, 21);
 			this->button1->TabIndex = 3;
@@ -201,7 +202,7 @@ namespace Juzn {
 			this->button2->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
 				| System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
-			this->button2->Location = System::Drawing::Point(3, 29);
+			this->button2->Location = System::Drawing::Point(3, 35);
 			this->button2->Name = L"button2";
 			this->button2->Size = System::Drawing::Size(71, 21);
 			this->button2->TabIndex = 4;
@@ -214,7 +215,7 @@ namespace Juzn {
 			this->button3->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
 				| System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
-			this->button3->Location = System::Drawing::Point(3, 56);
+			this->button3->Location = System::Drawing::Point(3, 62);
 			this->button3->Name = L"button3";
 			this->button3->Size = System::Drawing::Size(71, 20);
 			this->button3->TabIndex = 5;
@@ -228,7 +229,7 @@ namespace Juzn {
 				| System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->Check_Glider->AutoSize = true;
-			this->Check_Glider->Location = System::Drawing::Point(80, 82);
+			this->Check_Glider->Location = System::Drawing::Point(80, 88);
 			this->Check_Glider->Name = L"Check_Glider";
 			this->Check_Glider->Size = System::Drawing::Size(93, 20);
 			this->Check_Glider->TabIndex = 6;
@@ -242,7 +243,7 @@ namespace Juzn {
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->Check_Dot->AutoSize = true;
 			this->Check_Dot->Checked = true;
-			this->Check_Dot->Location = System::Drawing::Point(3, 82);
+			this->Check_Dot->Location = System::Drawing::Point(3, 88);
 			this->Check_Dot->Name = L"Check_Dot";
 			this->Check_Dot->Size = System::Drawing::Size(71, 20);
 			this->Check_Dot->TabIndex = 7;
@@ -256,7 +257,7 @@ namespace Juzn {
 				| System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->Check_Rifle->AutoSize = true;
-			this->Check_Rifle->Location = System::Drawing::Point(80, 108);
+			this->Check_Rifle->Location = System::Drawing::Point(80, 114);
 			this->Check_Rifle->Name = L"Check_Rifle";
 			this->Check_Rifle->Size = System::Drawing::Size(93, 21);
 			this->Check_Rifle->TabIndex = 8;
@@ -271,7 +272,7 @@ namespace Juzn {
 			this->checkBox1->AutoSize = true;
 			this->checkBox1->Checked = true;
 			this->checkBox1->CheckState = System::Windows::Forms::CheckState::Checked;
-			this->checkBox1->Location = System::Drawing::Point(80, 56);
+			this->checkBox1->Location = System::Drawing::Point(80, 62);
 			this->checkBox1->Name = L"checkBox1";
 			this->checkBox1->Size = System::Drawing::Size(93, 20);
 			this->checkBox1->TabIndex = 9;
@@ -284,7 +285,7 @@ namespace Juzn {
 				| System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
 			this->radioButton1->AutoSize = true;
-			this->radioButton1->Location = System::Drawing::Point(3, 108);
+			this->radioButton1->Location = System::Drawing::Point(3, 114);
 			this->radioButton1->Name = L"radioButton1";
 			this->radioButton1->Size = System::Drawing::Size(71, 21);
 			this->radioButton1->TabIndex = 10;
@@ -295,7 +296,7 @@ namespace Juzn {
 			// 
 			// h_line
 			// 
-			this->h_line->Location = System::Drawing::Point(80, 135);
+			this->h_line->Location = System::Drawing::Point(80, 141);
 			this->h_line->Name = L"h_line";
 			this->h_line->Size = System::Drawing::Size(93, 20);
 			this->h_line->TabIndex = 11;
@@ -306,7 +307,7 @@ namespace Juzn {
 			this->w_line->Anchor = static_cast<System::Windows::Forms::AnchorStyles>((((System::Windows::Forms::AnchorStyles::Top | System::Windows::Forms::AnchorStyles::Bottom)
 				| System::Windows::Forms::AnchorStyles::Left)
 				| System::Windows::Forms::AnchorStyles::Right));
-			this->w_line->Location = System::Drawing::Point(3, 135);
+			this->w_line->Location = System::Drawing::Point(3, 141);
 			this->w_line->Name = L"w_line";
 			this->w_line->Size = System::Drawing::Size(71, 20);
 			this->w_line->TabIndex = 12;
@@ -330,7 +331,7 @@ namespace Juzn {
 			this->Controls->Add(this->tableLayoutPanel1);
 			this->Controls->Add(this->pictureBox1);
 			this->Name = L"MyForm";
-			this->Text = L"MyForm";
+			this->Text = L"Игра жизнь";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->pictureBox1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->trackBar1))->EndInit();
 			this->tableLayoutPanel1->ResumeLayout(false);
@@ -343,7 +344,8 @@ namespace Juzn {
 
 		Bitmap^ curr, ^next;
 		int w, h, scale = 2;
-		int red = Color::Red.ToArgb();
+		long long frame = 0;
+		const int RED = Color::Red.ToArgb();
 
 		bool GetPixel(int x, int y)
 		{
@@ -361,8 +363,8 @@ namespace Juzn {
 			}
 			else if (x < 0 || x >= w || y < 0 || y >= h)
 				return false;
-
-			return (curr->GetPixel(x*scale, y*scale).ToArgb() == red);
+//
+			return map[x][y];//  (curr->GetPixel(x*scale, y*scale).ToArgb() == RED);
 		}
 
 		void SetPixel(int x, int y, bool live)
@@ -382,16 +384,19 @@ namespace Juzn {
 			else if (x < 0 || x >= w || y < 0 || y >= h)
 				return;
 
-			for (int i = 0; i < scale-1; i++)
-				for (int j = 0; j < scale-1; j++)
-					next->SetPixel(x*scale + i, y*scale + j, (live) ? Color::Red : Color::White);
+			if ((mask[x][y] || live) || std::fmax(w, h)< 150)
+				for (int i = 0; i < scale-1; i++)
+					for (int j = 0; j < scale-1; j++)
+						next->SetPixel(x*scale + i, y*scale + j, (live) ? Color::Red : Color::White);
+						//next->SetPixel(x*scale + i, y*scale + j, (live) ? Color::Red : ((mask[x][y]) ? Color::Green :Color::White));
 		}
 
 		void SetWH()
 		{
+			frame = 0;
 			w = Convert::ToInt32(w_line->Text);
 			h = Convert::ToInt32(h_line->Text);
-			scale = (int)std::fmax(std::round((float)200 / (float)std::fmax(w, h)), 2);
+			scale = (int)std::fmax(std::round((float)200 / (float)std::fmax(w, h)), 2);			
 		}
 
 		void GenerateRandom()
@@ -404,7 +409,10 @@ namespace Juzn {
 
 			for (int i = 0; i < w; i++)
 				for (int j = 0; j < h; j++)
-				SetPixel(i, j, r->NextDouble() < .5f);
+				{
+					mask[i][j] = 1;
+					SetPixel(i, j, r->NextDouble() < .5f);
+				}
 			
 			Bitmap ^s = curr;
 			curr = next;
@@ -416,6 +424,10 @@ namespace Juzn {
 
 		bool IsAlive(int x, int y)
 		{
+			// optimizer
+			if (mask[x][y] == false)
+				return false;
+
 			int neighbors = 0;
 			for (int i = -1; i < 2; i++)
 				for (int j = -1; j < 2; j++)
@@ -430,15 +442,32 @@ namespace Juzn {
 
 
 	private: System::Void timer1_Tick(System::Object^  sender, System::EventArgs^  e) {
+		
 
 		delete next;
 		next = gcnew Bitmap(w*scale, h*scale);
 
+		// Begin optimizer
 
-		/*for (int i = 0; i < w; i++)
+		for (int i = 0; i < w; i++)
 			for (int j = 0; j < h; j++)
-			if (curr->GetPixel(i, j).ToArgb() == Color::Red.ToArgb())//Color::Red)
-			int a = 5;*/
+				mask[i][j] = 0;
+		for (int i = 0; i < w; i++)
+			for (int j = 0; j < h; j++)
+			{
+				bool isRed = curr->GetPixel(i*scale, j*scale).ToArgb() == RED;
+				map[i][j] = (isRed);
+				if (i == 0 || i == w - 1 || j == 0 || j == h - 1)// || i == 1 || j == 1 || i == w - 2 || j == h - 2)
+					mask[i][j] = 1;
+
+				if (isRed)
+					for (int k1 = -1; k1 < 2; k1++)
+						for (int k2 = -1; k2 < 2; k2++)
+							mask[i + k1][j + k2] = 1;
+			}
+
+		
+		// End optimizer
 
 		for (int i = 0; i < w; i++)
 			for (int j = 0; j < h; j++)
@@ -454,8 +483,15 @@ namespace Juzn {
 		curr = next;
 		next = s;
 
-		pictureBox1->BackgroundImage = curr;
-		pictureBox1->Invalidate();
+		//if (frame % 1 == 0)
+		{
+			pictureBox1->BackgroundImage = curr;
+			pictureBox1->Invalidate();
+		}
+		if (frame > 100000)
+			frame = 0;
+		frame++;
+		label2->Text = Convert::ToString(frame);
 
 	}
 	private: System::Void trackBar1_Scroll(System::Object^  sender, System::EventArgs^  e) {
@@ -478,17 +514,11 @@ private: System::Void button2_Click(System::Object^  sender, System::EventArgs^ 
 		timer1->Enabled = true;
 	}
 }
-
+/*
 public: Point GetMousePositionWindowsForms()
 {
 	System::Drawing::Point point = Control::MousePosition;
 	return Point(point.X, point.Y);
-}
-		/*
-public static void Copy(Bitmap target, Bitmap source, int x, int y)
-{
-	Graphics g = Graphics::FromImage(target);
-	g.DrawImage(source, x, y);
 }*/
 
 private: System::Void pictureBox1_MouseClick(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e) {
@@ -497,9 +527,6 @@ private: System::Void pictureBox1_MouseClick(System::Object^  sender, System::Wi
 	Bitmap ^s = curr;
 	curr = next;
 	next = s;
-	//next = curr->Clone(curr->GetBounds(System::Drawing:), curr->PixelFormat));
-
-	//label2->Text = (!GetPixel(x, y)).ToString();
 
 	if (Check_Dot->Checked)
 		SetPixel(x, y, e->Button == System::Windows::Forms::MouseButtons::Left);
@@ -555,20 +582,11 @@ private: System::Void button3_Click(System::Object^  sender, System::EventArgs^ 
 		for (int j = 0; j < h; j++)
 			SetPixel(i, j, false);
 
-	/*int a = w / 2, b = h / 2;
-	SetPixel(1 + a, 1 + b, true);
-	SetPixel(2 + a, 2 + b, true);
-	SetPixel(3 + a, 2 + b, true);
-	SetPixel(1 + a, 3 + b, true);
-	SetPixel(2 + a, 3 + b, true);*/
-
-
 	Bitmap ^s = curr;
 	curr = next;
 	next = s;
 
 	pictureBox1->BackgroundImage = curr;
-
 }
 private: System::Void radioButton1_MouseClick(System::Object^  sender, System::Windows::Forms::MouseEventArgs^  e) {
 	
@@ -579,17 +597,57 @@ private: System::Void radioButton1_MouseClick(System::Object^  sender, System::W
 	
 	System::Windows::Forms::DialogResult a = testDialog->ShowDialog(this);
 	//if (a == System::Windows::Forms::DialogResult::OK)
+	
+	String ^str = testDialog->richTextBox1->Text;
+	//label2->Text = s;
+	figure.clear();
+	figure.push_back(std::vector<bool>());
+
+	if (str->Contains("$") && str->Contains("b") && str->Contains("o")) // if RLE format
 	{
-		String ^str = testDialog->richTextBox1->Text;
-		//label2->Text = s;
-		figure.clear();
-		figure.push_back(std::vector<bool>());
+		int i = 0, num = 1;
+		String ^buf = "";
+		for (int k = 0; k < str->Length; k++)
+		{
+			if (str[k] == '\n')
+				continue;
+			if (str[k] != '!')
+			{
+				buf += str[k];
+				if (str[k] == '$')// && str[k] != '\n\r' && str[k] != '\r')
+				{
+					for (int j = 0; j < num; j++)
+					{
+						figure.push_back(std::vector<bool>());
+						i++;
+					}
+					buf = "";
+					num = 1;
+				}
+				if (Char::IsDigit(str[k]) && !Char::IsDigit(str[k + 1]))
+				{
+					num = Convert::ToInt32(buf);
+					buf = "";
+				}
+				if (Char::IsLetter(str[k]))
+				{
+					for (int j = 0; j < num; j++)
+						figure[i].push_back(buf == "o");
+					buf = "";
+					num = 1;
+				}
+			}
+		}
+	}
+	else
+	{
 		int i = 0;
 		for (int k = 0; k < str->Length; k++)
 		{
-			if (str[k] != '\n')
+			if (str[k] != '\n')// && str[k] != '\n\r' && str[k] != '\r')
 				if (str[k] == 'O' || str[k] == '.')
 					figure[i].push_back((str[k] == 'O') ? 1 : 0);
+				else{}
 			else
 			{
 				figure.push_back(std::vector<bool>());

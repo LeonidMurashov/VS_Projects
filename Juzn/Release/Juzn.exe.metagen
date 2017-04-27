@@ -23,5 +23,3 @@ Class Juzn.TextDialog: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
 Class Juzn.MyForm: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
   :System.Windows.Forms.Form
     Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
-  Methods:
-    GetMousePositionWindowsForms(): PrivateScope, Public, HideBySig
